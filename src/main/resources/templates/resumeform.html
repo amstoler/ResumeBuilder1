@@ -19,13 +19,27 @@
     <span th:if="${#fields.hasErrors('email')}"
           th:errors="*{email}"></span><br />
 
-    Education :<input type="text" th:field="*{education}" />
-    <span th:if="${#fields.hasErrors('education')}"
-          th:errors="*{education}"></span><br />
+    Education A :<input type="text" th:field="*{educationA}" />
+    <span th:if="${#fields.hasErrors('educationA')}"
+          th:errors="*{educationA}"></span><br />
+    Education B :<input type="text" th:field="*{educationB}" />
+    <span th:if="${#fields.hasErrors('educationB')}"
+          th:errors="*{educationB}"></span><br />
+    Education C :<input type="text" th:field="*{educationC}" />
+    <span th:if="${#fields.hasErrors('educationC')}"
+          th:errors="*{educationC}"></span><br />
 
-    Experience :<input type="text" th:field="*{experience}" />
-    <span th:if="${#fields.hasErrors('experience')}"
-          th:errors="*{experience}"></span><br />
+    Experience 1 :<input type="text" th:field="*{experienceA}" />
+    <span th:if="${#fields.hasErrors('experienceA')}"
+          th:errors="*{experienceA}"></span><br />
+
+    Experience 2 :<input type="text" th:field="*{experienceB}" />
+    <span th:if="${#fields.hasErrors('experienceB')}"
+          th:errors="*{experienceB}"></span><br />
+
+    Experience 3 :<input type="text" th:field="*{experienceC}" />
+    <span th:if="${#fields.hasErrors('experienceC')}"
+          th:errors="*{experienceC}"></span><br />
 
     Orginization (Rate 1-5):<input type="text" th:field="*{orginization}" />
     <span th:if="${#fields.hasErrors('orginization')}"
