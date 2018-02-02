@@ -8,40 +8,27 @@
 <a href="/add"> Add or update Resume</a><br/>
 
 
-<table>
-    <tr>
-        <th>Name</th>
-    </tr>
 
-    <tr>
-        <th>Email</th>
-    </tr>
+        <h4>Name</h4>
+<div th:each="resume : ${resumes}" >
+    <h4 th:inline="text">[[${resume.name}]]</h4>
+</div>
 
-    <tr>
-        <th>Education</th>
-    </tr>
-
-    <tr>
-        <th>Job Experience</th>
-    </tr>
-
-    <tr>
-        <th>Skills</th>
-    </tr>
+        <h4>Email</h4>
 
 
-    <tr th:each="resume : ${resumes}">
-        <td th:text="${resume.name}"></td>
-        <td th:text="${resume.email}"></td>
-        <td th:text="${resume.education}"></td>
-        <td th:text="${resume.experience}"></td>
-        <td th:text="${resume.organization}"></td>
-        <td th:text="${resume.communication}"></td>
-        <td th:text="${resume.time_management}"></td>
-
-    </tr>
 
 
-</table>
+        <h4>Education</h4>
+
+        <h4>Job Experience</h4>
+
+        <h4>Skills</h4>
+
+
+
+
+
 </body>
 </html>
+
