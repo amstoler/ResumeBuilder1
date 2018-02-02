@@ -12,9 +12,13 @@
         <h4>Name</h4>
 <div th:each="resume : ${resumes}" >
     <h4 th:inline="text">[[${resume.name}]]</h4>
-</div>
+
 
         <h4>Email</h4>
+<h4 th:inline="text">[[${resume.email}]]</h4>
+
+</div>
+
 
 
 
