@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -29,7 +30,7 @@ public class HomeController {
     }
 
     @PostMapping("/process")
-    public String processForm(@Valid Resume resume, BindingResult result)
+    public String processForm(@Valid @ModelAttribute("resume") Resume resume, BindingResult result)
     {
         if (result.hasErrors()){
             return "resumeform";
