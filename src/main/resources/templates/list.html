@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Title</title>
+    <title>Add a Resume</title>
 </head>
 <body>
-<a href="/">Add a Course</a><br />
 
 
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
 
+    <tr th:each="resume : ${resumes}">
+        <td th:text="${resume.name}"></td>
+
+
+    </tr>
+
+
+</table>
 </body>
 </html>
