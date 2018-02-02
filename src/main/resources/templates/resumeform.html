@@ -15,6 +15,32 @@
     <span th:if="${#fields.hasErrors('name')}"
           th:errors="*{name}"></span><br />
 
+    Email :<input type="text" th:field="*{email}" />
+    <span th:if="${#fields.hasErrors('email')}"
+          th:errors="*{email}"></span><br />
+
+    Education :<input type="text" th:field="*{education}" />
+    <span th:if="${#fields.hasErrors('education')}"
+          th:errors="*{education}"></span><br />
+
+    Experience :<input type="text" th:field="*{experience}" />
+    <span th:if="${#fields.hasErrors('experience')}"
+          th:errors="*{experience}"></span><br />
+
+    Orginization (Rate 1-5):<input type="text" th:field="*{orginization}" />
+    <span th:if="${#fields.hasErrors('orginization')}"
+          th:errors="*{orginization}"></span><br />
+
+    Time Magement (Rate 1-5) :<input type="text" th:field="*{timeManagement}" />
+    <span th:if="${#fields.hasErrors('timeManagement')}"
+          th:errors="*{timeManagement}"></span><br />
+
+    Communication (Rate 1-5) :<input type="text" th:field="*{communication}" />
+    <span th:if="${#fields.hasErrors('communication')}"
+          th:errors="*{communication}"></span><br />
+
+
+
     <br />
     <input type="submit" value="Submit" />
 </form>

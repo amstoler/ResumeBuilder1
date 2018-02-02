@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import org.hibernate.validator.constraints.Range;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,7 +20,7 @@ public class Resume {
     private String name;
 
     @NotNull
-    @Size(min=3) //only 3 necessary. Email has 3 parts name@domain
+    @Size(min=3) //only 3 chars necessary. Email has 3 parts name@domain
     private String email;
 
     @NotNull
@@ -30,8 +32,17 @@ public class Resume {
     private String experience;
 
     @NotNull
-    @Size
-    private String skills;
+    @Range(min = 1, max=5)
+    private String orginization;
+
+    @NotNull
+    @Range(min = 1, max=5)
+    private String timeManagement;
+
+    @NotNull
+    @Range(min = 1, max=5)
+    private String communication;
+
 
     public Resume() {
     }
@@ -76,11 +87,27 @@ public class Resume {
         this.experience = experience;
     }
 
-    public String getSkills() {
-        return skills;
+    public String getTimeManagement() {
+        return timeManagement;
     }
 
-    public void setSkills(String skills) {
-        this.skills = skills;
+    public void setTimeManagement(String timeManagement) {
+        this.timeManagement = timeManagement;
+    }
+
+    public String getOrginization() {
+        return orginization;
+    }
+
+    public void setOrginization(String orginization) {
+        this.orginization = orginization;
+    }
+
+    public String getCommunication() {
+        return communication;
+    }
+
+    public void setCommunication(String communication) {
+        this.communication = communication;
     }
 }

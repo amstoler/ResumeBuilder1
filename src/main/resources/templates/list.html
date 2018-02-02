@@ -9,13 +9,15 @@
 
 
 
-        <h4>Name</h4>
+
 <div th:each="resume : ${resumes}" >
     <h4 th:inline="text">[[${resume.name}]]</h4>
-
-
-        <h4>Email</h4>
-<h4 th:inline="text">[[${resume.email}]]</h4>
+    <h4 th:inline="text">[[${resume.email}]]</h4>
+    <h4 th:inline="text">[[${resume.education}]]</h4>
+    <h4 th:inline="text">[[${resume.experience}]]</h4>
+    <h4 th:inline="text">[[${resume.orginization}]]</h4>
+    <h4 th:inline="text">[[${resume.timeManagement}]]</h4>
+    <h4 th:inline="text">[[${resume.communication}]]</h4>
 
 </div>
 
@@ -23,11 +25,7 @@
 
 
 
-        <h4>Education</h4>
 
-        <h4>Job Experience</h4>
-
-        <h4>Skills</h4>
 
 
 
