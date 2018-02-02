@@ -2,9 +2,10 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Add a Resume</title>
+    <title>Resume</title>
 </head>
 <body>
+<a href="/add"> Add or update Resume</a><br/>
 
 
 <table>
@@ -21,7 +22,7 @@
     </tr>
 
     <tr>
-        <th>Experience</th>
+        <th>Job Experience</th>
     </tr>
 
     <tr>
@@ -31,7 +32,12 @@
 
     <tr th:each="resume : ${resumes}">
         <td th:text="${resume.name}"></td>
-
+        <td th:text="${resume.email}"></td>
+        <td th:text="${resume.education}"></td>
+        <td th:text="${resume.experience}"></td>
+        <td th:text="${resume.organization}"></td>
+        <td th:text="${resume.communication}"></td>
+        <td th:text="${resume.time_management}"></td>
 
     </tr>
 
