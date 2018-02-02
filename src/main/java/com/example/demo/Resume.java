@@ -15,7 +15,7 @@ public class Resume {
 
     @NotNull
     @Size(min=4)
-    private String title;
+    private String name;
 
     public Resume() {
     }
@@ -28,11 +28,11 @@ public class Resume {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 }
