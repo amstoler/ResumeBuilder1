@@ -24,12 +24,28 @@ public class Resume {
     private String email;
 
     @NotNull
-    @Size(min=5)
-    private String education;
+    @Size(min=10)
+    private String educationA;
 
     @NotNull
     @Size(min=5)
-    private String experience;
+    private String educationB;
+
+    @NotNull
+    @Size(min=5)
+    private String educationC;
+
+    @NotNull
+    @Size(min=5)
+    private String experienceA;
+
+    @NotNull
+    @Size(min=5)
+    private String experienceB;
+
+    @NotNull
+    @Size(min=5)
+    private String experienceC;
 
     @NotNull
     @Range(min = 1, max=5)
@@ -71,22 +87,6 @@ public class Resume {
         this.email = email;
     }
 
-    public String getEducation() {
-        return education;
-    }
-
-    public void setEducation(String education) {
-        this.education = education;
-    }
-
-    public String getExperience() {
-        return experience;
-    }
-
-    public void setExperience(String experience) {
-        this.experience = experience;
-    }
-
     public String getTimeManagement() {
         return timeManagement;
     }
@@ -109,5 +109,53 @@ public class Resume {
 
     public void setCommunication(String communication) {
         this.communication = communication;
+    }
+
+    public String getExperienceA() {
+        return experienceA;
+    }
+
+    public void setExperienceA(String experienceA) {
+        this.experienceA = experienceA;
+    }
+
+    public String getExperienceB() {
+        return experienceB;
+    }
+
+    public void setExperienceB(String experienceB) {
+        this.experienceB = experienceB;
+    }
+
+    public String getExperienceC() {
+        return experienceC;
+    }
+
+    public void setExperienceC(String experienceC) {
+        this.experienceC = experienceC;
+    }
+
+    public String getEducationA() {
+        return educationA;
+    }
+
+    public void setEducationA(String educationA) {
+        this.educationA = educationA;
+    }
+
+    public String getEducationB() {
+        return educationB;
+    }
+
+    public void setEducationB(String educationB) {
+        this.educationB = educationB;
+    }
+
+    public String getEducationC() {
+        return educationC;
+    }
+
+    public void setEducationC(String educationC) {
+        this.educationC = educationC;
     }
 }
